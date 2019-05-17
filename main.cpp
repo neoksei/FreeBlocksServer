@@ -6,7 +6,7 @@
 
 
 int main() {
-    FileSystem my_fs("../FreeDrive", 512);
+    FileSystem my_fs("../FreeDrive", 512); // другой конструктор создает фс с нуля
     zmq::context_t context(1);
     zmq::socket_t socket(context, ZMQ_REP);
 
